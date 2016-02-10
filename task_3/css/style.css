@@ -1,0 +1,161 @@
+body {
+	background: #f9f9f9;
+	font-family: Tahoma;
+}
+
+.wrapper {
+	background: #fff;
+	box-shadow: 0 0 5px 1px #e1e1e1;
+	margin-left: 11.5%; 
+	width: 78.5%;
+}
+
+/*HEADER*/
+header {
+	margin: 0 0 40px 45px;
+	width: 91.3%;
+}
+
+.logo {
+	padding: 50px 0 38px 0; 
+}
+
+.headerMenu {
+	background: #4b4b4b; /* For browsers that do not support gradients */ 
+	background: -webkit-linear-gradient(0deg, #444343, #5e5e5e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(0deg, #444343, #5e5e5e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(0deg, #444343, #5e5e5e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, #444343, #5e5e5e); /* Standard syntax (must be last) */
+}
+
+.headerMenu li {
+	display: inline-block;
+	margin: 0 20px 0 0;
+	width: 120px;
+}
+
+.headerMenu a {
+	color: #fff;
+	display: inline-block;
+	font-size: 14.67px;
+	line-height: 21px;
+	padding: 10px 0 9px 24px;
+	text-decoration: none;
+	text-shadow: 1px 1px rgba(0, 0, 0, .5);
+}
+
+.headerMenu li:nth-child(2) {
+	background: #303030; /* For browsers that do not support gradients */ 
+	background: -webkit-linear-gradient(0deg, #2e2e2e, #4a4a4a); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(0deg, #2e2e2e, #4a4a4a); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(0deg, #2e2e2e, #4a4a4a); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, #2e2e2e, #4a4a4a); /* Standard syntax (must be last) */
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+	margin-right: 33px;
+	width: 99px;
+}
+
+.headerMenu li:nth-child(3) {
+	margin-right: 3px;
+}
+
+/*MAIN*/
+main {
+	display: -webkit-flex; /* Safari */
+  display: flex;
+	margin: 0 0 40px 45px;
+	width: 91.3%;
+}
+
+main nav {
+	-webkit-flex-basis: 29.8%; /* Safari 6.1+ */
+  flex-basis: 29.8%;
+}
+
+main section {
+	-webkit-flex-basis: 70%; /* Safari 6.1+ */
+	flex-basis: 70%;
+}
+
+.mainMenu {
+	border: 1px solid #c8c8c8;
+	width: 237px;
+}
+
+.mainMenu a {
+	border-bottom: 1px solid #c8c8c8;
+	color: #6a6a6a;
+	display: block;
+	font-size: 13.33px;
+	letter-spacing: 1px;
+	padding: 12.8px 22px;
+	text-decoration: none;
+	width: 193px;
+}
+
+.mainMenu li:nth-child(3) a {
+	background: #f9f9f9;
+	color: #4a4a4a;
+	padding-left: 35px;
+	width: 180px;
+}
+
+.mainMenu li:last-child a {
+	border-bottom: none;
+}
+
+.bicycle {
+	border: 1px solid #c8c8c8;
+	display: block;
+	padding: 45px 85px 45px 91px;
+}
+
+.mainText {
+	color: #363636;
+	font-size: 13px;
+	letter-spacing: .5px;
+	line-height: 21px;
+	margin: 20px;
+	padding: 15px 15px 0 6px;
+}
+
+/*FOOTER*/
+footer {
+	margin: 0 0 0 45px;
+	padding-bottom: 58px;
+	width: 91.3%;
+}
+
+.footerMenu {
+	background: #e1e1e1;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	height: 40px;
+}
+
+.footerMenu a {
+	color: #4f4e4e;
+	font-size: 13px;
+	line-height: 40px;
+	padding: 0 0 0 25px;
+	text-decoration: none;
+}
+
+.footerMenu li {
+	-webkit-flex-grow: 1;		/* flex for  Safari 6.1+ */
+	flex-grow: 1;
+	color: #4f4e4e;
+}
+
+.footerMenu li:nth-child(2) {
+	text-decoration: underline;
+}
+
+.footerMenu li:last-child {
+	-webkit-flex-grow: 3;		/* flex for  Safari 6.1+ */
+	flex-grow: 3;
+	font-size: 13.33px;
+	padding: 12px 25px;
+	text-align: right;
+}
