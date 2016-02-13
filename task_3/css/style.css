@@ -13,7 +13,7 @@ body {
 /*HEADER*/
 header {
 	margin: 0 0 40px 45px;
-	width: 91.3%;
+	width: 91.1%;
 }
 
 .logo {
@@ -80,35 +80,44 @@ main section {
 
 .mainMenu {
 	border: 1px solid #c8c8c8;
-	width: 237px;
+	width: 82.5%;
+}
+
+.mainMenu li {
+	border-bottom: 1px solid #c8c8c8;
 }
 
 .mainMenu a {
-	border-bottom: 1px solid #c8c8c8;
 	color: #6a6a6a;
 	display: block;
 	font-size: 13.33px;
 	letter-spacing: 1px;
 	padding: 12.8px 22px;
 	text-decoration: none;
-	width: 193px;
 }
 
-.mainMenu li:nth-child(3) a {
+.mainMenu li:hover a {
 	background: #f9f9f9;
 	color: #4a4a4a;
-	padding-left: 35px;
-	width: 180px;
+	text-indent: 10px;
+	text-decoration: underline;
+	-webkit-transition: .6s;  	 /* Safari */
+	transition: .5s;
 }
 
-.mainMenu li:last-child a {
+.mainMenu li:last-child {
 	border-bottom: none;
 }
 
 .bicycle {
 	border: 1px solid #c8c8c8;
+	width: 100%;
+}
+
+.bicycleImg {
 	display: block;
-	padding: 45px 85px 45px 91px;
+	width: 74%;
+	margin: 45px auto 45px auto;
 }
 
 .mainText {
