@@ -1,0 +1,140 @@
+body {
+	font-family: Tahoma, sans-serif;
+}
+
+.mainWrapper {
+	background: url('../img/background.png') no-repeat;
+	width: 71%;
+	margin: 0 auto;
+}
+
+.innerWrapper {
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*HEADER*/
+.palm,
+.logo, 
+.logoText {
+	position: absolute;
+}
+
+.palm {
+	top: 58px;
+	left: 140px;
+	opacity: .1;
+}
+
+.logo {
+  top: 132px;
+	opacity: .8;
+}
+
+.logoText {
+	top: 174px;
+	left: 85px;
+	color: #e6e6e6;
+	font-size: 10.16px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.contacts {
+	float: right;
+	padding: 150px 19px 0 0;
+	margin-bottom: 17px;
+}
+
+.contacts li { 
+	color: #fff;
+	font-family: Tahoma;
+	margin: 2px 0;
+	font-size: 8.47px;
+}
+
+.contacts li:first-child {
+	font-size: 10.16px;
+	padding-bottom: 3px;
+}
+
+header:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*MAIN*/
+main {
+	padding-bottom: 135px;
+	position: relative;
+}
+
+main:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.photoDiv {
+	float: left;
+	text-align: center;
+	margin-bottom: 52px;
+	width: 32.35%;
+}
+
+.india,
+.nepal,
+.tibet,
+.butan,
+.sriLanka,
+.maldives {
+	height: 178px;
+	border: 2px solid #b2b2b2;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px #363535 inset, 2px 2px #000, -1px -1px #000;
+}
+
+.india {
+	background: url('../img/india_photo.png') no-repeat;
+}
+
+.nepal {
+	background: url('../img/nepal_photo.png') no-repeat;
+}
+
+.tibet {
+	background: url('../img/tibet_photo.png') no-repeat;
+}
+
+.butan {
+	background: url('../img/maldives_photo.png') no-repeat;
+}
+
+.sriLanka {
+	background: url('../img/sri-lanka-photo.png') no-repeat;
+}
+
+.maldives {
+	background: url('../img/bhutan_photo.png') no-repeat;
+}
+
+.photoDiv span {
+	color: #fff;
+	font-size: 15.24px;
+}
+
+.photoCenter {
+	margin: 0 12px 0 12px;
+}
+
+/*FOOTER*/
+footer {
+	text-align: center;
+  padding-bottom: 28px;
+}
+
+footer p {
+	font-size: 10.16px;
+	color: #fff
+}

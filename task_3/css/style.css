@@ -28,23 +28,60 @@ header {
   background: linear-gradient(0deg, #444343, #5e5e5e); /* Standard syntax (must be last) */
 }
 
+.headerMenu:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .headerMenu li {
-	display: inline-block;
-	margin: 0 20px 0 0;
-	width: 120px;
+	float: left;
+	text-align: center;
 }
 
 .headerMenu a {
 	color: #fff;
 	display: inline-block;
 	font-size: 14.67px;
-	line-height: 21px;
-	padding: 10px 0 9px 24px;
 	text-decoration: none;
+	padding: 12px 0 14px 0;
 	text-shadow: 1px 1px rgba(0, 0, 0, .5);
 }
 
-.headerMenu li:nth-child(2) {
+.headerMenuLink1 {
+	width: 144px;
+	text-indent: -40px;
+}
+
+.headerMenuLink1:hover {
+	width: 142px;
+}
+
+.headerMenuLink2 {
+	width: 100px;
+}
+
+.headerMenuLink2:hover {
+	width: 98px;
+}
+
+.headerMenuLink3 {
+	width: 170px;
+}
+
+.headerMenuLink3:hover {
+	width: 168px;
+}
+
+.headerMenuLink4 {
+	width: 110px;
+}
+
+.headerMenuLink4:hover {
+	width: 108px;
+}
+
+.headerMenu li:hover {
 	background: #303030; /* For browsers that do not support gradients */ 
 	background: -webkit-linear-gradient(0deg, #2e2e2e, #4a4a4a); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(0deg, #2e2e2e, #4a4a4a); /* For Opera 11.1 to 12.0 */
@@ -52,28 +89,22 @@ header {
   background: linear-gradient(0deg, #2e2e2e, #4a4a4a); /* Standard syntax (must be last) */
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
-	margin-right: 33px;
-	width: 99px;
-}
-
-.headerMenu li:nth-child(3) {
-	margin-right: 3px;
 }
 
 /*MAIN*/
-main {
+.main {
 	display: -webkit-flex; /* Safari */
   display: flex;
 	margin: 0 0 40px 45px;
 	width: 91.3%;
 }
 
-main nav {
+.mainNav {
 	-webkit-flex-basis: 29.8%; /* Safari 6.1+ */
   flex-basis: 29.8%;
 }
 
-main section {
+.mainSection {
 	-webkit-flex-basis: 70%; /* Safari 6.1+ */
 	flex-basis: 70%;
 }
@@ -99,7 +130,8 @@ main section {
 .mainMenu li:hover a {
 	background: #f9f9f9;
 	color: #4a4a4a;
-	text-indent: 10px;
+	/*text-indent: 10px;*/
+	padding-left: 30px;
 	text-decoration: underline;
 	-webkit-transition: .6s;  	 /* Safari */
 	transition: .5s;
@@ -116,7 +148,7 @@ main section {
 
 .bicycleImg {
 	display: block;
-	width: 74%;
+	max-width: 74%;
 	margin: 45px auto 45px auto;
 }
 
@@ -157,7 +189,7 @@ footer {
 	color: #4f4e4e;
 }
 
-.footerMenu li:nth-child(2) {
+.footerMenu a:hover {
 	text-decoration: underline;
 }
 
