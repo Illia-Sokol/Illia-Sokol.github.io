@@ -151,6 +151,7 @@ footer {
 	line-height: 40px;
 	padding-left: 25px;
 	text-decoration: none;
+	display: block;
 }
 
 .footerMenu li {
