@@ -37,6 +37,7 @@ header {
 .headerMenu li {
 	float: left;
 	text-align: center;
+	width: 100px;
 }
 
 .headerMenu a {
@@ -44,41 +45,9 @@ header {
 	display: inline-block;
 	font-size: 14.67px;
 	text-decoration: none;
-	padding: 12px 0 14px 0;
+	padding: 13px 0;
+	width: 100%;
 	text-shadow: 1px 1px rgba(0, 0, 0, .5);
-}
-
-.headerMenuLink1 {
-	width: 144px;
-	text-indent: -40px;
-}
-
-.headerMenuLink1:hover {
-	width: 142px;
-}
-
-.headerMenuLink2 {
-	width: 100px;
-}
-
-.headerMenuLink2:hover {
-	width: 98px;
-}
-
-.headerMenuLink3 {
-	width: 170px;
-}
-
-.headerMenuLink3:hover {
-	width: 168px;
-}
-
-.headerMenuLink4 {
-	width: 110px;
-}
-
-.headerMenuLink4:hover {
-	width: 108px;
 }
 
 .headerMenu li:hover {
@@ -89,6 +58,7 @@ header {
   background: linear-gradient(0deg, #2e2e2e, #4a4a4a); /* Standard syntax (must be last) */
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
+	box-sizing: border-box;
 }
 
 /*MAIN*/
@@ -163,7 +133,7 @@ header {
 
 /*FOOTER*/
 footer {
-	margin: 0 0 0 45px;
+	margin-left: 45px;
 	padding-bottom: 58px;
 	width: 91.3%;
 }
@@ -179,7 +149,7 @@ footer {
 	color: #4f4e4e;
 	font-size: 13px;
 	line-height: 40px;
-	padding: 0 0 0 25px;
+	padding-left: 25px;
 	text-decoration: none;
 }
 
