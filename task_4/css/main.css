@@ -96,6 +96,9 @@ header:after {
 	position: relative;
 	overflow: hidden;
 	margin-top: -2px;
+	display: table;
+	height: 100%;
+	width: 100.1%;
 }
 
 .mainInform:after {
@@ -117,6 +120,7 @@ header:after {
 	box-shadow: 0 2px 2px #303030;
 	position: absolute;
 	width: 100%;
+	vertical-align: top;
 }
 
 .mainMenu li{
@@ -142,32 +146,43 @@ header:after {
 	display: block;
 }
 
-.mainMenu>li:nth-child(2) {
-	background: url('../img/newTriangle.png') no-repeat 117px 13px;
+.mainMenu>li:nth-child(2),
+.mainMenu>li:nth-child(3),
+.mainMenu>li:nth-child(4) {
 	position: relative;
 	padding: 7px 0;
 	cursor: pointer;
 } 
 
-.mainMenu>li:nth-child(3) {
-	background: url('../img/newTriangle.png') no-repeat 97px 13px;
+.mainMenu>li:nth-child(2):after {
+	content: url('../img/newTriangle.png');
+	padding-left: 10px;
+}
+
+.mainMenu>li:nth-child(3):after {
+	content: url('../img/newTriangle.png');
+	padding-left: 10px;
+}
+
+.mainMenu>li:nth-child(4):after{
+	content: url('../img/newTriangle.png');
+	padding-left: 10px;
 }
 
 .mainMenu>li:nth-child(4) {
-	background: url('../img/newTriangle.png') no-repeat 111px 13px;
-	padding-right: 30px;
+	padding-right: 20px;
 }
 
 .addMenu {
 	box-shadow: 0 5px 5px #262727;
-	left: 15px;
 	padding-top: 8px;
 	position: absolute;
-	width: 150px;
  	display: none; 
 }
 
-.mainMenu>li:nth-child(2):hover .addMenu {
+.mainMenu>li:nth-child(2):hover .addMenuTravels,
+.mainMenu>li:nth-child(3):hover .addMenuService,
+.mainMenu>li:nth-child(4):hover .addMenu {
 	display: block;
 }
 
@@ -175,11 +190,36 @@ header:after {
 	line-height: 10px;
 	padding-left: 10px;
 	text-align: left;
-	width: 140px;
 }
 
 .addMenu li:last-child {
 	padding-bottom: 10px;
+}
+
+.addMenuTravels {
+	left: 5px;
+}
+
+.addMenuTravels li {
+	width: 140px;
+}
+
+.addMenuService {
+	width: 110px;
+	left: 25px;
+}
+
+.addMenuService li{
+	width: 100px;
+}
+
+.addMenuPartners {
+	width: 130px;
+	left: 12px;
+}
+
+.addMenuPartners li {
+	width: 120px;
 }
 
 .mainLeft, 
@@ -200,16 +240,23 @@ header:after {
 	padding-bottom: 1px;
 }
 
+/*USING TABLE-CELL*/
+.box {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.center {
+	width: 60%;
+}
+
 .mainRight {
 	border-left: 1px solid #c7cacf;
-	float: right;
 }
 
 .mainLeft {
 	border-right: 1px solid #c7cacf;
-	float: left;
-	margin-bottom: -20000px;
-	padding-bottom: 20000px;
+	width: 20%;
 }
 
 /*FOOTER*/ 
