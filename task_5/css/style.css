@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'Helvetica Neue Medium', Tahoma, Arial, sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 90%;
+}
+
+/*HEADER*/
+nav:after {
+	clear: both;
+	content: '';
+	display: block;
+} 
+
+.mainMenu {
+	float: right;
+}
+
+.mainMenu li {
+	float: right;
+	text-align: center;
+}
+
+.mainMenu li a {
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.menuLeft {
+	background: #085494;
+	width: 69.4%;
+}
+
+.menuLeft li a{
+	color: #60b5ed;
+	display: block;
+	padding: 11px 15px;
+}
+
+.menuLeft a:hover {
+	background: #4eabda;
+	color: #fff;
+}
+
+.menuRight {
+	background: #085494;
+	border-left: 2px solid #4eabda;
+	box-sizing: border-box;
+	padding-right: 10px;
+	width: 30.6%;
+}
+
+.menuRight li {
+	color: #fff;
+	font-size: 14px;
+}
+
+.menuRight li a {
+	color: #fff;
+}
+
+.firstLink {
+	width: 33%;
+}
+
+.firstLink a {
+	display: block;
+	padding: 11px 0;
+}
+
+.secondLink {
+	padding: 11px 0;
+	width: 53%;
+}
+
+.firstLink a:hover,
+.secondLink:hover {
+	background: -webkit-linear-gradient(180deg, rgba(128,209,245,1), rgba(46,122,196,.7)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(180deg, rgba(128,209,245,1), rgba(46,122,196,.7)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(180deg, rgba(128,209,245,1), rgba(46,122,196,.7)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(180deg, rgba(128,209,245,1), rgba(46,122,196,.7)); /* standart */
+	border-right: 1px solid rgba(128,209,245,1);
+	border-left: 1px solid rgba(128,209,245,1);
+  box-sizing: border-box;
+}
+
+.secondLink a:hover {
+  text-decoration: underline;	
+}
+
+.fa-flag {
+	color: white;
+	font-size: 21px;
+	left: -13px;
+	position: relative;
+	top: 6px;
+}
+
+/*MAIN*/
+main {
+	background: url('../img/background.jpg');
+	height: 1000px;
+	position: relative;
+}
+
+.wrapperTop {
+	background: rgba(0,0,0, .5);
+	color: #fff;
+	left: 29%;
+	position: absolute;
+	text-align: center;
+	top: 21.2%;
+	width: 46.3%;
+}
+
+.wrapperTop h1 {
+	font-size: 24px;
+	padding: 19px 0;
+}
+
+.wrapperBottom {
+	background: rgba(0,0,0, .5);
+	left: 29%;
+	position: absolute;
+	top: 27.7%;
+	width: 46.3%;
+}
+
+.innerWrapper {
+	margin: 0 auto;
+	width: 50%;
+}
+
+/* FACEBOOK BUTTON */
+.facebookButton {
+	margin: 35px 0 40px 0;
+	position: relative;
+ 	box-sizing: border-box; 
+}
+
+.facebookBtn {
+	background: -o-linear-gradient(180deg, #3e5694, #344164);
+	background: -webkit-linear-gradient(180deg, #3e5694, #344164);
+  background: -moz-linear-gradient(180deg, #3e5694, #344164);
+	background: linear-gradient(180deg, #3e5694, #344164); 
+	border: none;
+	border-left: 2px solid #758ab5;
+	border-radius: 0 3px 3px 0;
+	border-top: 2px solid #758ab5;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 29px;
+	margin-left: 42px;
+	width: 85%;
+}
+
+.facebookBtn:focus {
+	outline:0;
+}
+
+.fa-facebook {
+	background: -o-linear-gradient(180deg, #3e5694, #344164);
+	background: -webkit-linear-gradient(180deg, #3e5694, #344164);
+	background: linear-gradient(180deg, #3e5694, #344164);
+	border-radius: 3px 0 0 3px;
+	border-right: 1px solid #213c71;
+	border-top: 2px solid #758ab5;
+	font-size: 21px;
+	left: 0px;
+	padding: 5px 15px;
+	position: absolute;
+	top: 0px;
+  background: -moz-linear-gradient(180deg, #3e5694, #344164);
+}
+
+.normalText {
+	font-weight: normal;
+}
+
+.facebookBtn:hover {
+	cursor: pointer;
+}
+
+/* HORIZONTAL LINE */
+.textOU {
+	margin-bottom: 12px;
+	width: 100%;
+  box-sizing: border-box;
+}
+
+.textOU:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.line {
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #666;
+	width: 44%;
+}
+.one, .center {
+	float: left;
+}
+
+.textBettwenLines {
+	color: #ccc;
+	display: block;
+	margin: 0 1%;	
+	position: relative;
+	text-align: center;
+	top: -5px;
+	width: 10%;
+}
+
+/* FORM */
+.formStyle {
+	background: #000;
+	border: 0;
+	border-bottom: 1px solid #666666;
+	color: #ccc;
+	font-size: 14px;
+	height: 30px;
+	margin: 10px 0;
+	text-indent: 20px;
+	width: 100%;
+}
+
+.formStyle:hover {
+	background: #1b5288;
+	border-bottom: 1px solid #689bcc;
+	box-shadow: 0 0 3px 3px #4b86b0;
+}
+
+.textLabel {
+	color: #ccc;
+	font-size: 14px;
+}
+
+
+.formSubmit [type="submit"] {
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	background: -webkit-linear-gradient(180deg, #67c6e6, #2e7bc4);
+	background: -o-linear-gradient(180deg, #67c6e6, #2e7bc4);
+  background: -moz-linear-gradient(180deg, #67c6e6, #2e7bc4);
+	background: linear-gradient(180deg, #67c6e6, #2e7bc4); 
+	display: block;
+	font-size: 14px;
+	margin: 25px auto;
+	padding: 8px 15px;
+}
+
+.formSubmit [type="submit"]:hover {
+	box-shadow: 0 1px 2px 0 #689bcc;
+}
+
+.footer { 
+	color: #ccc;
+	font-size: 11px;
+	margin: 20px 0;
+	text-align: center;
+}

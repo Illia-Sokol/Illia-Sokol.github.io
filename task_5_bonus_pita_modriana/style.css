@@ -1,0 +1,71 @@
+table {
+	border-collapse: collapse;
+}
+
+/*tr td {
+	border: 1px solid black;
+}*/
+
+.first td {
+	height: 20px;
+}
+
+.second td,
+.third td {
+	height: 50px;
+}
+
+.fourth td, 
+.fifth td {
+	height: 25px;
+}
+
+.sixth td,
+.seventh td {
+	height: 20px
+}
+
+.one
+{
+	width: 20px;
+}
+
+.two {
+	width: 110px;
+}
+
+.three {
+	width: 50px;
+}
+
+.red {
+	background: red;
+}
+
+.orange {
+	background: orange;
+}
+
+.black {
+	background: black;
+}
+
+.blue {
+	background: blue;
+}
+
+.top {
+	border-top: 3px solid black;
+}
+
+.left {
+	border-left: 3px solid black;
+}
+
+.right {
+	border-right: 3px solid black;
+}
+
+.bottom {
+	border-bottom: 3px solid black;
+}
