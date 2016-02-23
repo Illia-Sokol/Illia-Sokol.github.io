@@ -17,13 +17,22 @@
 
 .headerMenu {
 	box-sizing: border-box;
+	position: relative;
 }
 
 .headerMenu .phone {
 	background: repeating-linear-gradient(#206988, #114165 59%, #0c3256 100%);
 	width: 20px;
 	border-radius: 50%;
-	margin: 21px 0 0 8px;
+	margin: 22px 0 0 8px;
+	position: relative;
+}
+
+.phone .tube {
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 2px;
 }
 
 .phoneNumber {
