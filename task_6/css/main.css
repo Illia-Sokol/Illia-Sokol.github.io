@@ -723,9 +723,11 @@ footer {
 	padding: 0 12px;
 }
 
-.copyright {
+ .copyright {
 	color: #7f4740;
 	font-size: 10px;
 	display: inline-block;
 	margin-left: 22%;
-}
+	letter-spacing: 1px;
+	word-spacing: 1px;
+} 
