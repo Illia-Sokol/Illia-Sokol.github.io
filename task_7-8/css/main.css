@@ -932,14 +932,14 @@ footer {
 	/*LINE OF ICONS*/
 	.logos-innerWrap {
 		margin: 0 auto;
-		width: 100%;
-		margin: 25px 0 35px 0;
+		margin-top: 25px;
+    margin-bottom: 30px;
 	}
 
 	.box__icon__small {
 		float: left;
-		width: 30%;
-		margin: 10px 1%;
+		width: 26%;
+    margin: 10px 3.5%;
 	}
 
 	.icon__4 {
@@ -1069,14 +1069,14 @@ footer {
 	/*LINE OF ICONS*/
 	.logos-innerWrap {
 		margin: 0 auto;
-		width: 100%;
-		margin: 25px 0 30px 0;
+		/*width: 100%;*/
+		margin: 25px auto;
 	}
 
 	.box__icon__small {
 		float: left;
-		width: 40%;
-		margin: 28px 4%;
+		width: 37%;
+		margin: 28px 6%;
 	}
 
 	/*RECALL*/
