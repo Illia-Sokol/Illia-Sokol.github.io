@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var number = +prompt('Введите число');
+		var extent = +prompt('Введите степень');
+
+		function pow(n, e) {
+			var result = n;
+			if (e != 1 ) {
+				if(e == 0) {
+					return 1;
+				}
+				result = n * pow(n, e-1);
+			}
+			return result;
+			}
+
+		alert( pow(number, extent) );
+	</script>
+</body>
+</html>

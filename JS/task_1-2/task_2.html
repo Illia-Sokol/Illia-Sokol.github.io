@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var myArr= [],
+				userName;
+
+		for (var i = 0; i < 5; i++) {
+			var elementArr = prompt('Введите имя ' + (i+1) + '-го пользователя');
+			myArr.push(elementArr);
+		}
+
+		console.log(myArr);
+
+		userName = prompt('Введите имя ранее введенного пользователя')
+		function login(user) {
+			for (var i = 0; i < myArr.length; i++) {
+				if ( user.toLowerCase() === myArr[i].toLowerCase() ) {
+					alert( user + ', вы успешно вошли!');
+					return
+				}
+			}
+			return alert('ОШИБКА! Пользователя с таким именем не существует')
+		}
+
+		login(userName);
+
+	</script>
+</body>
+</html>
