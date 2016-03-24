@@ -6,8 +6,15 @@
 </head>
 <body>
 	<script>
-		var number = +prompt('Введите число');
-		var extent = +prompt('Введите степень');
+		var number = prompt('Введите число');
+		var extent = prompt('Введите степень');
+		// !! добавил проверку на число !!
+		if ( ( !isNaN(parseFloat(number)) && isFinite(number) ) && 
+				 ( !isNaN(parseFloat(extent)) && isFinite(extent) ) ) {
+			console.log( pow(number, extent) );
+		} else {
+			console.log( 'Введите корректные значения!')
+		}
 
 		function pow(n, e) {
 			var result = n;
@@ -20,7 +27,7 @@
 			return result;
 			}
 
-		alert( pow(number, extent) );
+		
 	</script>
 </body>
 </html>

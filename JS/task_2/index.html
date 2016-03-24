@@ -11,6 +11,8 @@
 
 		for (var i = 0; i < 5; i++) {
 			var elementArr = prompt('Введите имя ' + (i+1) + '-го пользователя');
+			// проверка на нажатие кнопки "Отмена"
+			if (elementArr === null) continue;
 			myArr.push(elementArr);
 		}
 
@@ -19,9 +21,9 @@
 		userName = prompt('Введите имя ранее введенного пользователя')
 		function login(user) {
 			for (var i = 0; i < myArr.length; i++) {
-				if ( user.toLowerCase() === myArr[i].toLowerCase() ) {
-					alert( user + ', вы успешно вошли!');
-					return
+				if ( user.toLowerCase() === myArr[i].toLowerCase() && (+myArr[i] !== 0) ) {  //добавил проверку 
+																																										 //на пустую строку
+					return alert( user + ', вы успешно вошли!');
 				}
 			}
 			return alert('ОШИБКА! Пользователя с таким именем не существует')
