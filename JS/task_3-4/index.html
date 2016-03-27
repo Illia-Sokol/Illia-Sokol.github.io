@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		var obj = {
+			header: function () {
+				var h1 = document.createElement('h1');
+				h1.className = "mainHeader";
+				h1.innerHTML = "Тест по программированию";
+				h1.style.textAlign =  'center';
+				document.querySelector('.box').appendChild(h1);
+			},
+			box: function () {
+				var mainBox = document.createElement('div');
+				mainBox.style.width = '800px';
+				mainBox.style.background = '#eee';
+				mainBox.style.margin = '0 auto';
+				mainBox.style.padding = '30px';
+				mainBox.className = 'box';
+				document.body.appendChild(mainBox);
+			},
+			form: function () {
+				var myForm = document.createElement('form');
+				myForm.className = 'form';
+				document.querySelector('.box').appendChild(myForm);
+			},
+			ulMain: function () {
+				var ulMain = document.createElement('ul');
+				ulMain.className = 'mainList';
+				document.querySelector('.form').appendChild(ulMain);
+			},
+			ulChild: function (index) {
+				var ulChild = document.createElement('ul');
+				ulChild.className = 'childList-' +index;
+				ulChild.style.paddingLeft = '10px';
+				document.querySelector('.liMain-' + index).appendChild(ulChild)
+			},
+			liMain: function (index) {
+				var liMain = document.createElement('li');
+				liMain.innerHTML = index + '.' + "Вопрос №" + index;
+				liMain.className = "liMain-" + index;
+				liMain.style.listStyle = 'none';
+				document.querySelector(".mainList").appendChild(liMain);
+			},
+			liChild: function (i, j) {
+				var liChild = document.createElement('li');
+				liChild.className = "liChild-" + i + '-' + j
+				liChild.style.listStyle = 'none';
+				document.querySelector('.childList-' + i).appendChild(liChild);
+			},
+			checkbox: function (i, j) {
+				var input = document.createElement('input');
+				input.setAttribute('type', 'checkbox');
+				input.setAttribute('name', 'variant-' + i + '-' + j);
+				input.setAttribute('value', 'value-' + i + '-' + j);
+				input.setAttribute('id', 'input-' + i + '-' + j);
+				document.querySelector('.liChild-' + i + '-' + j).appendChild(input);
+			},
+			label: function (i, j) {
+				var newLable = document.createElement('label');
+				newLable.innerHTML = "Вариант ответа №" + j + '<br>';
+				newLable.setAttribute('for', 'input-' + i + '-' + j)
+				var list = document.querySelector('.list')
+				document.querySelector('.liChild-'  + i + '-' + j).appendChild(newLable);
+			},
+			button: function() {
+				var button = document.createElement('input');
+				button.setAttribute('type', 'submit');
+				button.setAttribute('value', 'Проверить мои результаты');
+				var btnStyle = button.style;
+				btnStyle.border = '2px solid #222';
+				btnStyle.padding = '10px';
+				btnStyle.width = '250px';
+				btnStyle.display = 'block';
+				btnStyle.margin = '30px auto';
+				btnStyle.cursor = 'pointer';
+				document.querySelector('.form').appendChild(button);
+			}
+		};
+
+
+		obj.box();
+		obj.header();
+		obj.form();
+		obj.ulMain();
+		for (var i = 1; i < 4; i++) {
+			obj.liMain(i);
+			obj.ulChild(i);
+			for(var j = 1; j < 4; j++) {
+				obj.liChild(i , j);
+				obj.checkbox(i, j);
+				obj.label(i, j);
+			}
+		}
+		obj.button();
+
+	</script>
+</body>
+</html>
