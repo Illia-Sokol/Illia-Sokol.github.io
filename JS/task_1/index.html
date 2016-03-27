@@ -6,28 +6,39 @@
 </head>
 <body>
 	<script>
-		var number = prompt('Введите число');
-		var extent = prompt('Введите степень');
-		// !! добавил проверку на число !!
-		if ( ( !isNaN(parseFloat(number)) && isFinite(number) ) && 
-				 ( !isNaN(parseFloat(extent)) && isFinite(extent) ) ) {
-			console.log( pow(number, extent) );
-		} else {
-			console.log( 'Введите корректные значения!')
-		}
-
-		function pow(n, e) {
+		var obj = {
+		negPow:  function (n, e) { return 1 / this.pow(n, e) },
+		pow: function (n, e) {
+			if (e < 0 ) var e = Math.abs(e);
 			var result = n;
 			if (e != 1 ) {
 				if(e == 0) {
 					return 1;
 				}
-				result = n * pow(n, e-1);
+				result = n * this.pow(n, e-1);
 			}
 			return result;
 			}
+		}
+
+		var number = prompt('Введите число');
+		var extent = prompt('Введите степень');
+		// !! добавил проверку на число !!
+		if ( ( !isNaN(parseFloat(number)) && isFinite(number) ) && 
+				 ( !isNaN(parseFloat(extent)) && isFinite(extent) ) ) {
+				if ( extent > 0 ) {
+					console.log( obj.pow(number, extent) )
+				} else {
+					console.log( obj.negPow(number, extent) );
+				}
+		} else {
+			console.log( 'Введите корректные значения!')
+		}
 
 		
+
+		
+
 	</script>
 </body>
 </html>
