@@ -1,0 +1,23 @@
+label {
+	display: inline-block; 
+	width: 70px;
+}
+fieldset div {
+	margin-bottom: 20px;
+}
+.ui-tooltip {
+	width: 710px;
+}
+div {
+	position: relative;
+}
+p {
+	position: absolute;
+	top: -20px;
+	left: 260px;
+	padding: 5px;	
+	border: 2px solid #aaa;	
+	display: none;
+	border-radius: 5px;	
+	box-shadow: 0px 0px 5px 0px black;
+}
