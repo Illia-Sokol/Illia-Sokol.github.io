@@ -1,0 +1,82 @@
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+    width: 400px;
+}
+
+.arrow-hower {
+    height: 99%;
+    width: 40px;
+    position: absolute;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.arrow {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 45%;
+    text-decoration: none;
+    background: darkgrey;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.arrow:hover .arrow-hower {
+    background: red;
+}
+
+.right {
+    left: 96%;
+}
+
+.jcarousel-prev {
+    padding-right: 2px;
+}
+
+.jcarousel-next { 
+    padding-left: 2px;
+}
+
+.jcarousel-pagination {
+    display: inline-block;
+    position: absolute;
+    bottom: 3%;
+    left: 49%;
+}
+
+.item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 1px;
+}
+
+.active {
+    background: #000;
+    border: 2px solid #fff;
+}
+

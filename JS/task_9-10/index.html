@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/select2.css">
+	<link rel="stylesheet" href="css/select2-skins.css">
+	<link rel="stylesheet" href="css/stylingChecbox.css">
+	<link rel="stylesheet" href="css/dropdown.css">
+</head>
+<body>
+	<!-- Dropdown menu -->
+	<ul class="mainMenu">
+		<li class="mainLi dropdown"><a href="#" class="">nav 0</a>
+		<li class="mainLi dropdown"><a href="#" class="">nav 1 ></a>
+			<ul class="subMenu">
+				<li><a href="#">sub_nav 1</a></li>
+				<li><a href="#">sub_nav 2</a></li>
+				<li class="subMenuLiThree dropdown"><a href="#">sub_nav 3 ></a>
+					<ul class="subMenu">
+						<li><a href="#">sub_nav 1.1</a></li>
+						<li><a href="#">sub_nav 1.2</a></li>
+						<li><a href="#">sub_nav 1.3</a></li>
+						<li><a href="#">sub_nav 1.4</a></li>
+					</ul>
+				</li>
+				<li><a href="#">sub_nav 4</a></li>
+			</ul>
+		</li>
+		<li class="mainLi"><a href="#">nav 2</a></li>
+		<li class="mainLi"><a href="#">nav 3</a></li>
+		<li class="mainLi"><a href="#">nav 4</a></li>
+	</ul>
+	<!-- jCarousel plugin -->
+	<h2>Plugin jCarousel</h2>
+	<div class="jcarousel">
+		<ul>
+			<li><img src="img/img1.jpg" alt=""></li>
+			<li><img src="img/img2.jpg" alt=""></li>
+			<li><img src="img/img3.jpg" alt=""></li>
+			<li><img src="img/img4.jpg" alt=""></li>
+			<li><img src="img/img5.jpg" alt=""></li>
+			<li><img src="img/img6.jpg" alt=""></li>
+		</ul>
+		<div class="arrow-hower left">
+			<a class="arrow jcarousel-prev" href="#">&lt;</a>
+		</div>
+		<div class="arrow-hower right">
+			<a class="arrow jcarousel-next" href="#">&gt;</a>
+		</div>
+		<div class="jcarousel-pagination"></div>
+	</div>
+	<!-- SELECT  -->
+	<h2>Plugin Select2</h2>
+	<select id="select">
+		<option></option>
+		<optgroup label="Alaskan/Hawaiian Time Zone">
+			<option value="AK" data-bgcolor="#222">Alaska</option>
+			<option value="HI">Hawaii</option>
+		</optgroup>
+		<optgroup label="Pacific Time Zone">
+			<option value="CA">California</option>
+			<option value="NV">Nevada</option>
+			<option value="OR">Oregon</option>
+			<option value="WA">Washington</option>
+		</optgroup>
+		<optgroup label="Mountain Time Zone">
+			<option value="AZ">Arizona</option>
+			<option value="CO">Colorado</option>
+			<option value="ID">Idaho</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NM">New Mexico</option>
+			<option value="ND">North Dakota</option>
+			<option value="UT">Utah</option>
+			<option value="WY">Wyoming</option>
+		</optgroup>
+	</select>
+	<h2>Styling checkbox and radio on pure CSS3</h2>
+	<div class="squaredFour">
+		<input type="checkbox" id="squaredFour" value="None" name="check">
+		<label for="squaredFour"></label>
+	</div>
+	<br>
+	<div class="circle2">
+		<input type="radio" id="radio2" name="circleTwo">
+		<label for="radio2"></label><br>
+		<input type="radio" id="radio3" name="circleTwo">
+		<label for="radio3"></label><br>
+	</div>
+	<br>
+	<div class="squaredThree">
+		<input type="checkbox" value="None" id="squaredThree" name="check" />
+		<label for="squaredThree"></label>
+	</div>
+	<br>
+	<div class="squareOne">
+		<span>ON</span>
+		<input type="checkbox" id="test-check1">
+		<label for="test-check1"></label>
+		<span class="off"> OFF</span>
+	</div>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/jquery.jcarousel.js"></script>
+		<script src="js/myCarousel.js"></script>
+		<script src="js/select2.min.js"></script>
+		<script src="js/select.js"></script>
+		<script src="js/dropdown.js"></script>
+	</body>
+	</html>
