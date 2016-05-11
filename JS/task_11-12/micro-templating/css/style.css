@@ -1,0 +1,91 @@
+
+body {
+	background-color: #eeeeee;
+	margin: 0;
+	font-size: 1.09em;
+}
+
+.wrapper {
+	background-color: #fff;
+	box-shadow: 0 0 3px 0 #9b9b9b;
+	margin: 4px 0 45px 34.5%;
+	width: 37.9%;
+}
+
+/*HEADER*/
+.myName {
+	font-size: 1.2em;
+	margin: 0 0 5px 0;
+	padding: 50px 0 15px 0;
+	text-align: center;
+}
+
+/*MAIN*/
+main {
+	margin: 0 auto;
+	width: 81%;
+}
+
+.sectionBlock {
+	margin: 0 auto;
+	width: 93%;
+}
+
+.myPhoto {
+	display: block;
+	margin: 0 auto;
+	width: 34.5%;
+}
+
+.student {
+	margin: 11px 0 17px 12px;
+}
+
+.myDesire {
+	margin: 24px 0 0 0;
+}
+
+.listDesires {
+	margin: 31px 0 18px 0;
+	padding-left: 20px;
+}
+
+.listDesires li {
+	margin: 7px 0 0 0;
+	padding-left: 5px;
+}
+
+.myPhone {
+	margin: 25px 0 0 0;
+}
+
+.phoneNumber {
+	margin: 7px 0;
+}
+
+.socialNetwork {
+	margin: 30px 0 18px 0;
+}
+
+.socialLink {
+	display: block;
+	margin-top: 6px
+}
+
+/*FOOTER*/
+footer {
+	margin: 0 auto;
+	width: 81%;
+	padding-bottom: 70px;
+}
+
+.myFeedback {
+	margin: 23px 0 0 0 ;
+}
+
+.myComment {
+	margin: 7px 0 0 0;
+}
+
+
+

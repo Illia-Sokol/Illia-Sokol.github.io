@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery-1.12.3.min.js"></script>
+	<script src="templating.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script type="text/html" id="aboutMe">
+		<div class="wrapper">
+			<header>
+				<h3 class="myName"><%= data[0].title %></h3>
+			</header>
+			<main>
+				<img class="myPhoto" src="<%= data[0].img %>" alt="<%= data[0].text %>">	
+				<div class="section-lock">
+					<p class="student"><%= data[0].student %></p>
+				</div>
+				<hr>
+				<div class="sectionBlock">
+					<p class="myDesire"><%= data[0].desire %></p>
+					<ul class="listDesires">
+						<% for(var i = 1; i < 4; i++) { %>
+						<li><%= data[i].whyStudy %></li>
+						<% } %>
+					</ul>
+				</div>
+				<hr>
+				<div class="sectionBlock">
+					<% for(var i = 0; i < 4; i++) { %>
+					<%= data[4][i] %>
+					<% } %>
+				</div>
+				<hr>
+			</main>
+			<footer>
+				<div class="sectionBlock">
+					<p class="myFeedback"><%= data[5].feedback %></p>
+					<p class="myComment"><%= data[5].myCooments %></p>
+				</div>
+			</footer>
+		</div>
+	</script>
+</body>
+</html>
