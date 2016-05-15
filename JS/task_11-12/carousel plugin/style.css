@@ -1,4 +1,6 @@
 .carousel-list {
+	// position: relative;
+	left: -225px;
 	list-style: none;
 	width: 100000px;
 	padding: 0;

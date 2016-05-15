@@ -2,29 +2,26 @@ $(function () {
 	var leftArrow = $('.carousel-arrow-left');
 	var rightArrow = $('.carousel-arrow-right');
 	var elementsList = $('.carousel-list');
-
-	var pixelsOffset = 125;
 	var currentLeftValue = 0;
-	var elementsCount = elementsList.find('li').length;
-	console.log(elementsCount)
-	var minimumOffset = - (elementsCount  * pixelsOffset);
-	console.log(minimumOffset)
-	var maximumOffset = 0;
+// FIRST ELEMENT WILL BE HIDDEN (LOOKING TO css)
+	$('.carousel-list li:first').before($('.carousel-list li:last'));
 
 	leftArrow.click(function () {
-		if (currentLeftValue != maximumOffset) {
-			currentLeftValue += 125;
-			elementsList.animate({
-				left: currentLeftValue + 'px'
-			}, 500);
-		}
+		elementsList.animate({
+			left: '0px'
+		}, 500, function () {
+			$('.carousel-list li:first').before($('.carousel-list li:last'));
+			$('.carousel-list').css({'left': '-225px'})
+		});
 	})
 	rightArrow.click(function () {
-		if (currentLeftValue != minimumOffset) {
-			currentLeftValue -= 125;
-			elementsList.animate({
-				left: currentLeftValue + 'px'
-			}, 500);
-		}
+		currentLeftValue = parseInt($('.carousel-list').css('left')) - 200;
+		console.log(currentLeftValue)
+		elementsList.animate({
+			left: currentLeftValue
+		}, 500, function () {
+			$('.carousel-list li:last').after($('.carousel-list li:first'));
+			$('.carousel-list').css({'left': '-225px'})
+		});
 	});
 });
