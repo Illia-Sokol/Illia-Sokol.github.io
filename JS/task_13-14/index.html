@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/templating.js"></script>
+	<script src="js/script.js"></script>
+	<div class="wrapper">
+	<h1 class="mainTitle">Проверим знания арифметики!:)</h1>
+		<div class="pasteJS"></div>
+		<script type="text/html" id="myTest">
+			<h3 class="myName"><%= data.question_1 %></h3>
+			<ol id="wrapAsks">
+				<% for(var i = 1; i < 4; i++) { %>
+				<li>
+					<input type="checkbox" name="<%= data.asks_1['ask_1_' + i] %>" value="<%= data.asks_1['ask_1_' + i] %>" id="quest_1_<%= i %>">
+					<label for="quest_1_<%= i %>"><%= data.asks_1['ask_1_' + i] %></label>
+					<br>
+				</li>
+				<% } %>
+			</ol>
+			<h3 class="myName"><%= data.question_2 %></h3>
+			<ol id="wrapAsks">
+				<% for(var i = 1; i < 4; i++) { %>
+				<li>
+					<input type="checkbox" name="<%= data.asks_2['ask_2_' + i] %>" value="<%= data.asks_2['ask_2_' + i] %>" id="quest_2_<%= i %>">
+					<label for="quest_2_<%= i %>"><%= data.asks_2['ask_2_' + i] %></label>
+					<br>
+				</li>
+				<% } %>
+			</ol>
+			<h3 class="myName"><%= data.question_3 %></h3>
+			<ol id="wrapAsks">
+				<% for(var i = 1; i < 4; i++) { %>
+				<li>
+					<input type="checkbox" name="<%= data.asks_3['ask_3_' + i] %>" value="<%= data.asks_3['ask_3_' + i] %>" id="quest_3_<%= i %>">
+					<label for="quest_3_<%= i %>"><%= data.asks_3['ask_3_' + i] %></label>
+					<br>
+				</li>
+				<% } %>
+			</ol>
+		</script>
+	<button id="myBtn">Проверить мои результаты</button>
+	</div>
+	<div id="modal"></div>
+	<div id="modal_content"></div>
+	<script src="js/checked.js"></script>
+</body>
+</html>
