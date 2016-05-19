@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// Human constructor
+		function Human(name, age, sex, height, weight) {
+			this.name = name;
+			this.age = age;
+			this.sex = sex;
+			this.height = height;
+			this.weight = weight;
+		}
+
+		// Student constructor
+		function Student (name, age, sex, height, weight, grant, university) {
+			Human.apply(this, arguments)
+			this.grant = grant;
+			this.university = university
+		}
+		Student.prototype.watchFilms = function() {
+			if( this.weight + this.grant > 110 ) {
+				return 'This student can go to the cinema! :)'
+			} else {
+				return 'This grant not enought go to the cinema! :)'
+			}
+		}
+
+		// Worker constructor
+		function Worker (name, age, sex, height, weight, job, salary) {
+			Human.apply(this, arguments);
+			this.job = job;
+			this.salary = salary;
+		}
+		Worker.prototype.working = function() {
+			return console.log(this.job + ' earns ' + this.salary + ' for the one month!')
+		}
+
+		// class human
+		var human = new Human('Serg', 25, 'man', 199, 110);
+		console.log('Class human = ', human);
+		console.log('human.name', human.name);
+
+		// class student
+		var student = new Student('Marta', 20, 'women', 180, 60, '50$', 'KPI');
+		console.log('Class student = ', student)
+		console.log('students.grant', student.grant);
+		console.log('students.name', student.name);
+		console.log('student.watchFilms', student.watchFilms() )
+
+		//class worker
+		var worker = new Worker('Illia', 26, 'man', 188, 80, 'Front-end developer', '3000$');
+		console.log('Class worker = ', worker)
+		worker.working();
+	</script>
+</body>
+</html>
