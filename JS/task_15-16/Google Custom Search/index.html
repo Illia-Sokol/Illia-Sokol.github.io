@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="google-site-verification" content="R4XxTOXvNsJb8Hb6E-nj52XgYjQRH53XJxn3QrDfNPI" />
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="R4XxTOXvNsJb8Hb6E-nj52XgYjQRH53XJxn3QrDfNPI" />
+  <title>Google Search API</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>HEllo Google</h1>
-	<script src="jquery-1.12.3.min.js"></script>
-	<script>
-	$.getJSON("https://www.googleapis.com/customsearch/v1?key=AIzaSyBFBGvioil72TMHARrEgqbu5boYRF5MZmw&cx=000978185509461210800:vyaidmyxf6i&q=test", 
-			function(data){
-						console.log(data);
-			});
-		</script>
-		<script></script>
-	</body>
-	</html>
+  <h1 class="heading">Custom Search Google API</h1>
+  <div class="search-box">
+    <hr>
+    <input type="text" id="search-box__input" placeholder="Enter your query">
+    <button id="search-box__button">
+      <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div id="demo"></div>
+  <script type="text/html" id="myTest">
+    <div class="search">
+      <p class="search__result">Результатов: примерно <%= searchInformation.formattedTotalResults %> (<%= searchInformation.formattedSearchTime %> ceк.)</p>
+      <% for(var i = 0; i < 10; i++) { %>
+      <p class="search__title"><a href="<%=items[i].link%>"><%= items[i].htmlTitle %></a></p>
+      <p class="search__link"><%= items[i]['formattedUrl'] %></p>
+      <p class="search__text"><%= items[i]['htmlSnippet'] %></p>
+      <hr>
+      <% } %>
+    </div>
+  </script>
+  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="js/templating.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
